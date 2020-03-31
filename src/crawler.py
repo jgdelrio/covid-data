@@ -69,21 +69,26 @@ async def write_file(data, name, clean=False):
             await file_obj.write(data)
 
 
-async def update_sources(semaphore):
+async def update_sources(val, country, semaphore):
     async with aiohttp.ClientSession() as session:
-        for country, array in data_sources.items():
-            LOG.info(f"Processing country: {country}")
-            for val in array:
-                if val['type'] == 'csv':
-                    res = await fetch(val, session, semaphore)
-                    if res:
-                        await write_file(res, f"{val['output']}.csv", clean=not val['isClean'])
+        LOG.info(f"Processing '{country}' {val['output']}")
+        if val['type'] == 'csv':
+            res = await fetch(val, session, semaphore)
+            if res:
+                await write_file(res, f"{val['output']}.csv", clean=not val['isClean'])
 
 
 def update_data_sources():
+    tasks = []
     semaphore = SemaphoreController()
+
+    for country, array in data_sources.items():
+        LOG.info(f"Assembling tasks for '{country}' ...")
+        for k in array:
+            tasks.append(update_sources(k, country, semaphore))
+
     loop = asyncio.get_event_loop()
-    loop.run_until_complete(update_sources(semaphore))
+    loop.run_until_complete(asyncio.gather(*tasks))
 
 
 if __name__ == '__main__':
