@@ -15,6 +15,7 @@ colors = {
 
 
 def generate_table(df, max_rows=20):
+    """Generates an HTML table from a pandas dataframe with the number of rows specified"""
     return html.Table([
         html.Thead(
             html.Tr([html.Th(col) for col in df.columns])

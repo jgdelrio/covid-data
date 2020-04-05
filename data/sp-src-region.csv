@@ -816,5 +816,43 @@ MC,02/04/2020,1145,405,72,46,90
 NC,02/04/2020,2836,1284,119,151,294
 PV,02/04/2020,7827,4283,363,444,2809
 RI,02/04/2020,2224,738,64,109,745
-NOTA: El objetivo de los datos que se publican en esta web es saber el número de casos acumulados a la fecha y que por tanto no se puede deducir que la diferencia entre un día y el anterior es el número de casos nuevos ya que esos casos pueden haber sido recuperados de fechas anteriores. Cualquier inferencia que se haga sobre las diferencias de un día para otro deben hacerse con precaución y son únicamente la responsabilidad el autor.,,,,,,
-Los datos de estas comunidades son datos de prevalencia (personas ingresadas a fecha de hoy). No reflejan el total de personas que han sido hospitalizadas o ingresadas en UCI  a lo largo del periodo de notificación(CL) (CM) (MD) (VC) y (MC)
+AN,03/04/2020,7869,3896,364,426,463
+AR,03/04/2020,3078,1505,190,251,440
+AS,03/04/2020,1522,766,87,76,190
+IB,03/04/2020,1271,634,114,71,422
+CN,03/04/2020,1564,632,128,78,123
+CB,03/04/2020,1384,619,60,68,99
+CM,03/04/2020,9324,3133,360,989,657
+CL,03/04/2020,8332,2664,348,786,2021
+CT,03/04/2020,24734,17678,2108,2508,8635
+CE,03/04/2020,73,8,4,1,2
+VC,03/04/2020,6901,1977,386,571,695
+EX,03/04/2020,1979,453,64,208,205
+GA,03/04/2020,5625,1767,178,159,531
+MD,03/04/2020,36249,14741,1498,4723,15362
+ME,03/04/2020,79,37,3,2,9
+MC,03/04/2020,1188,434,79,51,113
+NC,03/04/2020,2972,1341,120,171,311
+PV,03/04/2020,8187,4522,377,477,3098
+RI,03/04/2020,2405,805,64,128,843
+AN,04/04/2020,8301,4107,474,470,665
+AR,04/04/2020,3232,1588,233,270,537
+AS,04/04/2020,1605,808,90,80,216
+IB,04/04/2020,1293,664,120,75,461
+CN,04/04/2020,1622,644,129,80,137
+CB,04/04/2020,1441,639,62,68,113
+CM,04/04/2020,10031,2950,357,1055,1149
+CL,04/04/2020,8749,2574,351,847,2331
+CT,04/04/2020,26032,18656,2249,2637,9528
+CE,04/04/2020,83,9,4,2,2
+VC,04/04/2020,7184,1901,381,613,812
+EX,04/04/2020,2047,417,66,218,215
+GA,04/04/2020,5944,1831,170,174,587
+MD,04/04/2020,37584,14551,1499,4941,16543
+ME,04/04/2020,83,38,3,2,11
+MC,04/04/2020,1235,447,80,59,130
+NC,04/04/2020,3073,1399,123,178,334
+PV,04/04/2020,8628,4666,404,515,3405
+RI,04/04/2020,2592,855,66,134,904
+NOTA: El objetivo de los datos que se publican en esta web es saber el número de casos acumulados a la fecha y que por tanto no se puede deducir que la diferencia entre un día y el anterior es el número de casos nuevos ya que esos casos pueden haber sido recuperados de fechas anteriores Cualquier inferencia que se haga sobre las diferencias de un día para otro deben hacerse con precaución y son únicamente la responsabilidad el autor,,,,,,
+Los datos de estas comunidades son datos de prevalencia (personas ingresadas a fecha de hoy) No reflejan el total de personas que han sido hospitalizadas o ingresadas en UCI  a lo largo del periodo de notificación(CL-CM-MD-VC-MC),,,,,,
