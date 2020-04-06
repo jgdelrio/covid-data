@@ -4,9 +4,9 @@ import asyncio
 import aiofiles
 import nest_asyncio
 
-from src.sources import data_sources
-from src.utils import LOG, clean_text
-from src.config import *
+from covid.sources import data_sources
+from covid.utils import LOG, clean_text
+from covid.config import *
 
 nest_asyncio.apply()
 
@@ -29,7 +29,7 @@ class SemaphoreController:
         self._semaphore.release()
 
 
-async def fetch(entry, session, semaphore, verbose=VERBOSE):
+async def fetch(entry, session, semaphore, verbose: int=VERBOSE):
     # Get semaphore
     await semaphore.get_semaphore()
 
@@ -55,7 +55,7 @@ async def fetch(entry, session, semaphore, verbose=VERBOSE):
     return None
 
 
-async def write_file(data, name, clean=False):
+async def write_file(data, name: str, clean: bool=False):
     file_ref = DATA_FOLDER.joinpath(name)
 
     async with aiofiles.open(file_ref.as_posix(), mode="w") as file_obj:
@@ -69,7 +69,7 @@ async def write_file(data, name, clean=False):
             await file_obj.write(data)
 
 
-async def update_sources(val, country, semaphore):
+async def update_sources(val, country: str, semaphore):
     async with aiohttp.ClientSession() as session:
         LOG.info(f"Processing '{country}' {val['output']}")
         if val['type'] == 'csv':

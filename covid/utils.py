@@ -4,7 +4,7 @@ import logging
 from datetime import datetime
 from traitlets.config.loader import LazyConfigValue
 
-from src.config import *
+from covid.config import *
 
 
 remove = [
@@ -12,13 +12,13 @@ remove = [
 ]
 
 
-def clean_text(text):
+def clean_text(text: str):
     for r in remove:
         text = r.sub('', text)
     return text
 
 
-def in_ipynb(verbose=VERBOSE):
+def in_ipynb(verbose: int=VERBOSE):
     """Detects if we are running within ipython (Notebook)"""
     try:
         cfg = get_ipython().config
@@ -34,7 +34,7 @@ def in_ipynb(verbose=VERBOSE):
         return False
 
 
-def get_logger(name="covid-data", to_stdout=False, level=LOG_LEVEL):
+def get_logger(name: str="covid-data", to_stdout: bool=False, level=LOG_LEVEL):
     """Creates a logger with the given name"""
     logging.basicConfig(format=LOGGER_FORMAT, datefmt="[%H:%M:%S]")
     logger = logging.getLogger(name)

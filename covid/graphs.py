@@ -1,10 +1,13 @@
 import numpy as np
 import matplotlib.pyplot as plt
+from typing import Optional, Union, Iterator, Any
 
 
-def stacked_bars(data, series_labels, category_labels=None, orientation='horizontal', show_values=False,
-                 value_format="{}", y_label=None, x_label=None, colors=None, grid=True, plotsize=None,
-                 title=None, reverse=False, rotation="horizontal"):
+def stacked_bars(data: Union[tuple, np.array], series_labels: list, category_labels=None,
+                 orientation: str = 'horizontal', show_values: bool = False, value_format: str = "{}",
+                 y_label: Optional[str] = None, x_label: Optional[str] = None, colors=None,
+                 grid: bool = True, plotsize: Optional[tuple] = None, title: Optional[str] = None,
+                 reverse: bool = False, rotation: str = "horizontal"):
     """Plots a stacked bar chart with the data and labels provided.
 
     Keyword arguments:
@@ -81,7 +84,7 @@ def stacked_bars(data, series_labels, category_labels=None, orientation='horizon
                          va="center")
 
 
-def grouped_bars(df, columns, colours=None, title=None, xlabel=None, ylabel=None):
+def grouped_bars(df, columns: list, colours: list=None, title: str=None, xlabel: str=None, ylabel: str=None):
     """Plot in a single axis multiple bar graphs next to each other"""
     dim = len(columns)
     w = 0.75
@@ -114,7 +117,7 @@ def grouped_bars(df, columns, colours=None, title=None, xlabel=None, ylabel=None
         ax.set_title(title, fontsize=24)
 
 
-def multi_graph_bar(df, columns, colours=None, title=None, xlabel=None, ylabel=None):
+def multi_graph_bar(df, columns: list, colours: list=None, title: str=None, xlabel: str=None, ylabel: str=None):
     """Plot a figure with multiple bar graphs stacked up vertically"""
     ncols = len(columns)
 

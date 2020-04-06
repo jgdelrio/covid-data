@@ -3,8 +3,8 @@ import dateutil
 import numpy as np
 import pandas as pd
 from datetime import date, datetime, timedelta
-from src.sources import data_sources
-from src.config import DATA_FOLDER
+from covid.sources import data_sources
+from covid.config import DATA_FOLDER
 
 
 is_date = re.compile(r'[\d]{1,2}/[\d]{1,2}/[\d]{1,4}')
@@ -31,11 +31,11 @@ def as_time_series(data):
         return output
 
 
-def get_total(df, column='total'):
+def get_total(df, column: str='total'):
     return pd.DataFrame({column: df.sum(axis=1)}, index=df.index)
 
 
-def get_country(global_d, name='Spain'):
+def get_country(global_d, name: str='Spain'):
     output = {}
     as_array = []
     for key, entry in global_d.items():
