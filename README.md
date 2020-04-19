@@ -1,4 +1,19 @@
-# Coronavirus (Covid-19) Data
+# Coronavirus (Covid-19) Data & Notebooks
+
+## Data of multiple countries
+
+### global_covid-19_graphs
+
+This notebook shows the existing data for the country selected as well as the aggregation of the data globally for the number of cases detected, number of deaths or number of recovered.
+The scale can be selected linear or logarithmic.
+
+The last graphs allow to compare across countries by setting a common starting point per number of cases detected (example when there were at least 50 cases detected).
+
+
+### Realtime R0
+
+Notebook by k-sys, co-founder of Instagram
+
 
 ## Data of multiple countries
 
