@@ -31,6 +31,12 @@ data_sources = {
          'source': 'Instituto de Salud Carlos III',
          'country': 'Spain',
          'output': 'sp-covid-region', 'isClean': False},
+        {'url': 'https://raw.githubusercontent.com/datadista/datasets/master/COVID%2019/ccaa_covid19_casos.csv',
+         'type': 'csv',
+         'desc': 'Cases by date and Region',
+         'source': '',
+         'country': 'Spain',
+         'output': 'sp-covid-areas', 'isClean': True},
     ],
     'us': [
         {'url': 'https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv',
@@ -45,7 +51,15 @@ data_sources = {
          'source': 'New York Times',
          'country': 'United States',
          'output': 'us-covid-states', 'isClean': True},
-    ]
+    ],
+    'uk': [
+        {'url': 'https://raw.githubusercontent.com/tomwhite/covid-19-uk-data/master/data/covid-19-cases-uk.csv',
+         'type': 'csv',
+         'desc': 'Cases by date, Country and Area',
+         'source': '',
+         'country': 'United Kingdom',
+         'output': 'uk-covid-area', 'isClean': True},
+    ],
 }
 
 

@@ -10,9 +10,9 @@ The scale can be selected linear or logarithmic.
 The last graphs allow to compare across countries by setting a common starting point per number of cases detected (example when there were at least 50 cases detected).
 
 
-### Realtime R0
+### realtime_R0_xx
 
-Notebook by k-sys, co-founder of Instagram
+Realtime assessment of R0 for US
 
 
 ## Data of multiple countries
