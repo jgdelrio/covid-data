@@ -55,10 +55,16 @@ data_sources = {
     'uk': [
         {'url': 'https://raw.githubusercontent.com/tomwhite/covid-19-uk-data/master/data/covid-19-cases-uk.csv',
          'type': 'csv',
-         'desc': 'Cases by date, Country and Area',
+         'desc': 'Cases by date, County and Area',
          'source': '',
          'country': 'United Kingdom',
-         'output': 'uk-covid-area', 'isClean': True},
+         'output': 'uk-covid-area', 'isClean': False},
+        {'url': 'https://coronavirus.data.gov.uk/downloads/csv/coronavirus-cases_latest.csv',
+         'type': 'csv',
+         'desc': 'Cases by date and different levels of aggregation',
+         'source': '',
+         'country': 'United Kingdom',
+         'output': 'uk-covid-gov', 'isClean': True},
     ],
 }
 
