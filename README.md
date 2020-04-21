@@ -10,10 +10,22 @@ The scale can be selected linear or logarithmic.
 The last graphs allow to compare across countries by setting a common starting point per number of cases detected (example when there were at least 50 cases detected).
 
 
-### realtime_R0_xx
+### realtime_Rt_xx
 
-Realtime assessment of R0 for US
+Notebooks that calculate the estimation of Rt (effective reproduction number) meaning the number of people who become infected per infectious person at time t.
 
+- R > 1  => the pandemic will spread through the entire population.
+
+- R < 1  => the pandemic will grow to some fixed number of cases lower that the total population.
+
+So it's important to estimate Rt to understand the current scenario.
+
+These notebooks provide the estimation by region for:
+- SP: Spain
+- UK: United Kingdom
+- US: United States
+
+As well as per country in the Rt_Global notebook
 
 ## Data of multiple countries
 
