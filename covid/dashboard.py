@@ -2,7 +2,7 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html
 
-from src.data_manager import global_data
+from covid.data_manager import global_data
 
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
@@ -14,7 +14,8 @@ colors = {
 }
 
 
-def generate_table(df, max_rows=20):
+def generate_table(df, max_rows: int=20):
+    """Generates an HTML table from a pandas dataframe with the number of rows specified"""
     return html.Table([
         html.Thead(
             html.Tr([html.Th(col) for col in df.columns])
