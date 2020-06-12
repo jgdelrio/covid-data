@@ -96,3 +96,13 @@ Joplin is reported separately from Jasper and Newton Counties.
 * Chicago
 
 All cases and deaths for Chicago are reported as part of Cook County. 
+
+
+#### Other interesting sources
+
+- Covid-19 Simulation from the Imperial College:
+https://github.com/mrc-ide/covid-sim
+
+Missing required key 'VpcId' in params
+
+dataen-sagemaker-default-user

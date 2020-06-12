@@ -4,7 +4,7 @@ import logging
 from datetime import datetime
 from traitlets.config.loader import LazyConfigValue
 
-from covid.config import *
+from config import *
 
 
 remove = [

@@ -4,9 +4,9 @@ import asyncio
 import aiofiles
 import nest_asyncio
 
-from covid.sources import data_sources
-from covid.utils import LOG, clean_text
-from covid.config import *
+from sources import data_sources
+from utils import LOG, clean_text
+from config import *
 
 nest_asyncio.apply()
 
